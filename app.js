@@ -1,14 +1,17 @@
 //jshint esversion:6
 const express = require("express");
-const bodyParser = require("body-parser")
+const ejs = require('ejs');
 const superheroes = require('superheroes');
 const supervillains = require('supervillains');
+
 const app = express();
 var Hero = superheroes.random();
 var Villian = supervillains.random();
 
 app.set('view engine', 'ejs');
-app.use(bodyParser.urlencoded({extended: true}));
+app.use(express.json());
+app.use(express.static('public'));
+app.use(express.urlencoded({extended: true}));
 
 
 
@@ -28,5 +31,5 @@ app.post("/",function(req,res){
 })
 
 app.listen(3000,function(){
-    console.log("server started at 3000 port");
+    console.log("server started at http://localhost:3000");
 })
