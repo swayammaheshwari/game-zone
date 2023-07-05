@@ -1,0 +1,100 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  overflow: hidden;
+}
+
+.background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("/Hero Vs Villian/img/background.jpg");
+  background-size: cover;
+  z-index: -1;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.logo {
+  margin-bottom: 40px;
+}
+
+.logo img {
+  width: 200px;
+  height: auto;
+}
+
+.hero,
+.villain {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+.name {
+  display: inline-block;
+  position: relative;
+  border-radius: 2px;
+  border-color: black;
+  border-width: 2px;
+  margin: 20px;
+  padding: 10px;
+  background-color: rgb(229, 239, 239);
+  width: 300px;
+  text-align: center;
+  font-size: 3rem;
+  color: #222;
+}
+
+.refresh {
+  background: #3498db;
+  background-image: -webkit-linear-gradient(top, #3498db, #2980b9);
+  background-image: -moz-linear-gradient(top, #3498db, #2980b9);
+  background-image: -ms-linear-gradient(top, #3498db, #2980b9);
+  background-image: -o-linear-gradient(top, #3498db, #2980b9);
+  background-image: linear-gradient(to bottom, #3498db, #2980b9);
+  -webkit-border-radius: 8;
+  -moz-border-radius: 8;
+  border-radius: 8px;
+  font-family: Arial;
+  color: #ffffff;
+  font-size: 2rem;
+  padding: 15px 30px;
+}
+/* Add the following styles to your existing CSS code */
+
+.vv {
+  /* ... your existing styles ... */
+  text-align: center; /* Centers the text horizontally */
+}
+
+.btn {
+  /* ... your existing styles ... */
+  text-align: center; /* Centers the text horizontally */
+  display: inline-block; /* Displays the button as a block element */
+}
+
+.pp {
+  /* ... your existing styles ... */
+  text-align: center; /* Centers the text horizontally */
+}
+
+body {
+  background-image: url(/img/background.jpg); /* Replace with your own image */
+  background-size: cover;
+  background-repeat: no-repeat;
+}
